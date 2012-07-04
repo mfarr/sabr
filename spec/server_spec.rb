@@ -29,6 +29,18 @@ describe Sabr::Server do
         @server.warnings.has_key?("warnings").should be_true
       end
     end
+
+    describe "scripts" do
+      it "should return a list of scripts" do
+        @server.scripts.has_key?("scripts").should be_true
+      end
+    end
+
+    describe "restart" do
+      it "should restart the server" do
+        # @server.restart["status"].should be_true
+      end
+    end
   end
 
   context "Invalid API Key" do

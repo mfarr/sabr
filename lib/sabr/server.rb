@@ -20,6 +20,14 @@ module Sabr
       request(:warnings)
     end
 
+    def scripts
+      request(:get_scripts)
+    end
+
+    def restart
+      request(:restart)
+    end
+
     private
 
     def request(mode, params = {})
