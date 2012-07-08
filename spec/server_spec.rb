@@ -1,9 +1,9 @@
 require "sabr"
 describe Sabr::Server do
 
-  before (:each) do
-    @base_url = "http://192.168.0.115:8080/sabnzbd/api"
-    @api_key = "9b225c7d757763f6ccbac877085dfcf5"
+  before do
+    @base_url = "http://localhost:8080/sabnzbd/api"
+    @api_key = "7cc2325f8af0e85852ca9e9bf0ecc624"
     @invalid_key = "invalid"
   end
 
