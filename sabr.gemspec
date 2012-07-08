@@ -17,6 +17,8 @@ Gem::Specification.new do |gem|
 
   # Development dependencies
   gem.add_development_dependency "rspec", "~> 2.10"
+  gem.add_development_dependency "guard"
+  gem.add_development_dependency "guard-rspec"
 
   # Dependencies
   gem.add_dependency "httparty", "~> 0.8"
