@@ -1,0 +1,30 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8080/sabnzbd/api?apikey=<apikey>&mode=version&output=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Jul 2012 17:24:32 GMT
+      Content-Length:
+      - '19'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Pragma:
+      - no-cache
+      Server:
+      - CherryPy/3.2.0
+    body:
+      encoding: US-ASCII
+      string: ! '{"version":"0.7.0"}'
+    http_version: 
+  recorded_at: Mon, 09 Jul 2012 17:24:32 GMT
+recorded_with: VCR 2.2.2
